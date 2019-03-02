@@ -1,0 +1,313 @@
+/* ここから下に記述していきましょう */
+
+* {
+  box-sizing: border-box;
+}
+
+/*
+メモ
+css側でコメント機能を使いたいときは
+mac コマンドキー + /(スラッシュ)
+windows コントロールキー + /(スラッシュ)s
+
+背景画像
+background: url(xxxx)
+
+文字真ん中
+text-align: center
+
+横並び
+display:flex
+横並びにするときは必ず、display:flexを使ってからじゃないと横並びにならないので注意
+display:flexを使ったあとに、横を制御する[justify-content: xxx]を使ったりする
+
+
+*/
+
+.wapper{
+    width: 1366px;
+    margin: auto 
+    
+}
+
+.header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+.box{
+    
+    list-style: none;
+    display: flex;
+    flex-grow: 50;
+    font-size: 21px;
+    height: 121px;
+    margin-left: auto;
+    align-items: center;
+    justify-content: space-around;
+
+
+}
+
+.about-text{
+    color: black
+}
+
+.mainvisual{
+    position: relative;
+    height: 400px;
+    background: url(/Users/ShotaIshida/04_ishidashota_04/js04ishidashota/img/mainbg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0 0 60px;
+}
+
+.mainvisual p {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    line-height: 2;
+
+}
+.mainvisual p::first-line {
+    font-size: 30px;
+}
+.school{
+    padding: 60px 0;
+}
+.about1{
+    text-align: center;
+}
+
+.about__title{
+    margin: 0 0 30px;
+    font-size: 24px;
+    color: #ffd61a;
+    background-color: #fafafa;
+}
+.about-sub-title{
+    margin: 0 0 60px;
+    font-size: 18px;
+}
+.about-text{
+    font-size: 16px;
+    margin: 0 0 40px;
+}
+.about1 p{
+    line-height: 2;
+}
+.picture__list{
+    display: flex;
+    margin: 0 0;
+}
+.picture__item{
+    width: 25%;
+    list-style: none;
+}
+.news1 {
+    padding:60px 0 ;
+    text-align: center;
+
+}
+.news_sub_title{
+    font-size: 24px;
+    margin: 0 0 30px;
+    
+}
+.news-text1{
+    font-size: 18px;
+    margin: 0 0 60px;
+}
+
+.news__list {
+    display: flex ;
+    justify-content: space-between;
+    width: 960px;
+    margin:  0 auto ;
+
+}
+.news_list-item-img{
+    margin: 0 0 30px;
+
+}
+.news_list-item-day{
+    font-size: 16px;
+    margin: 0 0 24px;
+}
+.news_list-item-text{
+    width: 300px;
+    font-size: 16px;
+    margin: 0 0 60px;
+    line-height: 2;
+}
+.news-item{
+    width: 20%;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
+}
+
+.news-text2{
+    font-size: 16px;
+
+}
+
+.more {
+    line-height: 3.5;
+    display: inline-block;
+    width: 300px;
+    height: 60px;
+    background: #ffd61a;
+    color: #fafafa
+}
+
+.access{
+    background-color: #fafafa;
+    padding: 60px 0;
+    text-align: center;
+
+}
+.access-title{
+    font-size: 24px;
+    color: black;
+    margin: 0 0 30px;
+
+    
+}
+
+.access-sub-title{
+    font-size: 18px;
+    margin: 0 0 60px;    
+}
+.access-map iframe{
+    width: 100%;
+    margin: 0 0 60px;
+}
+
+.access-box{
+    display: flex;
+    justify-content: center;
+    line-height: 2;
+
+}
+.access-text1{
+    flex-direction: column;
+    list-style: none;
+    text-align: left;
+    margin: 0 40px;
+
+}
+.access-text2{
+    flex-direction: column;
+    list-style: none;
+    text-align: left;
+
+}
+
+.contact-title{
+    text-align:  center;
+    font-size: 24px;
+    margin: 60px 0px 30px;
+
+}
+.contact_sub_title{
+    text-align:  center;
+    font-size: 18px;
+    margin: 0px 0px 60px;
+}
+.contact_text1{
+    text-align:  center;
+    font-size: 16px;
+    margin: 60px 0px 30px;
+}
+.contact_text2{
+    text-align:  center;
+    font-size: 16px;
+    margin: 30px 0px 70px;
+}
+
+.form-wrapper{
+    width: 648px;
+    margin: auto;
+
+
+}
+.form-inner{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.form-title{
+    width: 240px;
+    
+    
+}
+
+.form-item{
+    width: 348px;
+    
+
+}
+
+.submit{
+    justify-content: initial;
+    text-align: center;
+    line-height: 3.5;
+    display: inline-block;
+    width: 300px;
+    height: 60px;
+    background: #ffd61a;
+    color: #fafafa  ;
+    margin: 30px 0 140px;
+
+}
+.footer{
+    padding: 30px 0 30px;
+    background: #707070;
+    text-align: center;
+
+
+}
+.icon-up{
+    color: #fff;
+
+}
+.copyrights{
+    color: #fff;
+
+}
+
+.form-title{
+    /* border-top: 1px solid #707070;
+    
+    border-right: 1px solid #707070;
+    margin-top: 0px;       /* 上線の外側の余白はナシ */
+    /* padding-top: 0px;      /* 上線の内側の余白はナシ */
+    /* margin-bottom: 0.3em;  /* 下線の外側の余白量 */
+    /* padding-bottom: 0.3em; 下線の内側の余白量 */ 
+    margin-left: 16px;
+    margin-bottom: 8px;
+ 
+
+}
+.form-item{
+    /* border-top: 1px solid #707070;
+    margin-top: 0px;       /* 上線の外側の余白はナシ */
+    /* padding-top: 0px;      /* 上線の内側の余白はナシ */
+    /* margin-bottom: 0.3em;  /* 下線の外側の余白量 */
+    /* padding-bottom: 0.3em; 下線の内側の余白量 */ 
+    margin-left: 8px;
+    margin-bottom: 8px;
+}
+.center{
+    text-align: center;
+}
